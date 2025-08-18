@@ -1,4 +1,5 @@
 ﻿using XYZ.DataProvider.Entities;
+using System.Buffers;
 
 namespace AuthService.Services
 {
