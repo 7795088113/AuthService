@@ -1,0 +1,17 @@
+@AuthService_HostAddress = http://localhost:5168/api/auth
+@token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoicmEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc1MTk3MjA0MywiaXNzIjoiRVBNU0F1dGgiLCJhdWQiOiJFUE1TVXNlcnMifQ.NRUgwPbxXsL_4e6P_VCttKF6IkWkz_6v8DeGt_AQUPA'
+GET {{AuthService_HostAddress}}/test/
+Accept: application/json 
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoicmEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc1MTk3MzY5NiwiaXNzIjoiRVBNU0F1dGgiLCJhdWQiOiJFUE1TVXNlcnMifQ.6a0-ikwKXYYR_qtuSndvvNnxjS6QJY3rIVXdvJryWSk
+###
+
+
+
+POST {{AuthService_HostAddress}}/login
+Content-Type:application/json; charset=utf-8
+
+{
+    "Username":"ra",
+    "Password":"ra"
+}
+###
