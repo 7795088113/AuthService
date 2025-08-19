@@ -11,7 +11,7 @@ namespace AuthService.Services
 
         //public List<Order> DoSomething_Vin();
 
-        public List<Order> DoSomething_Vin();
+        public string DoSomething_Vin();
 
 
         public void testing()
