@@ -1,5 +1,4 @@
 ﻿using Azure;
-using XYZ.DataProvider.Entities;
 
 namespace AuthService.Services
 {
@@ -12,11 +11,11 @@ namespace AuthService.Services
         {
             _myServScoped = myServScoped;
         }
-        public List<Order> DoSomething_Vin()
+        public string DoSomething_Vin()
         {
             //return new();
-            return _myServScoped().DoSomething();
-            //return "TransientMyServ";
+            
+            return "TransientMyServ";
         }
     }
 }

@@ -11,7 +11,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Win32;
 using System.Security.Cryptography;
 using System.Text;
-using XYZ.DataProvider.Entities;
 
 
 namespace AuthService.Controllers
