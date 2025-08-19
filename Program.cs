@@ -15,7 +15,6 @@ using Serilog;
 using System.Diagnostics;
 using System.Reflection;
 using System.Threading.RateLimiting;
-using XYZ.DataProvider.RegisterServices;
 
 internal class Program
 {
@@ -66,7 +65,7 @@ internal class Program
         builder.Services.AddScoped<IMyServScoped,ScopedMyServ > ();
         builder.Services.AddScoped<IMyServSingle, SingletonMyServ>();
         builder.Services.AddScoped<IMyServTrans, TransientMyServ>();
-        builder.Services.AddDbServices(builder.Configuration);
+         
         //builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();

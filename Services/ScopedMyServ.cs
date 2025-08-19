@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using XYZ.DataProvider.DbContexts;
-using XYZ.DataProvider.Entities;
-using XYZ.DataProvider.Repositories;
+ 
 
 namespace AuthService.Services
 {
@@ -9,20 +7,19 @@ namespace AuthService.Services
     {
         private readonly IMyServSingle _myServSingle;
         private readonly  IMyServTrans  _myServTrans;
-        private IProductsRepo _productsRepo;
+        //private IProductsRepo _productsRepo;
 
-        public ScopedMyServ(IMyServSingle myServSingle, IProductsRepo productsRepo,  IMyServTrans  myServTrans)
+        public ScopedMyServ(IMyServSingle myServSingle,    IMyServTrans  myServTrans)
         {
             _myServSingle = myServSingle; 
-            _productsRepo = productsRepo;
+           
             _myServTrans = myServTrans;
         }
-        public List<Order> DoSomething()
+        public string DoSomething()
         {
-            var mm = _productsRepo.GetALlProducts().Take(10).ToList();
-            return mm;
+             
 
-            //return "ScopedMyServ";
+            return "ScopedMyServ";
         }
     }
 }

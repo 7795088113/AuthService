@@ -38,9 +38,7 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\XYZ.DataProvider\XYZ.DataProvider.csproj" />
-  </ItemGroup>
+  
 
   <ItemGroup>
     <Content Update="VinnuCustom.json">
