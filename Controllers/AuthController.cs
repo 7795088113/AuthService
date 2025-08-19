@@ -46,7 +46,7 @@ namespace AuthService.Controllers
         [HttpGet("TestV1")]
         //[MapToApiVersion("2.0")]
         //[Authorize]
-        public List<Order> TestV1()
+        public string TestV1()
         {
            //var mm= _serviceProvider.GetRequiredService<NotifyResolver>();
             //HttpContext.Response.WriteAsync("This is a custom response written directly.");
@@ -54,8 +54,8 @@ namespace AuthService.Controllers
             _serviceProvider.ExecNotify("Mail").Send();
             _serviceProvider.ExecNotify("SMS").Send();
 
-            return _myServTrans.DoSomething_Vin();
-            //return "test V1";
+            //return _myServTrans.DoSomething_Vin();
+            return "test V1";
         }
         [HttpGet("TestV2")]
         //[MapToApiVersion("3.0")]
