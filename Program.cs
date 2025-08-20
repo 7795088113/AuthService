@@ -86,7 +86,7 @@ internal class Program
             //.WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Minute) // File logs
             .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} | VinayId: {TraceId}{NewLine}{Exception}")
 
-            .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day, outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} | VinayId: {TraceId}{NewLine}{Exception}")
+            .WriteTo.File("C:inetpub/logs/log-.txt", rollingInterval: RollingInterval.Day, outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} | VinayId: {TraceId}{NewLine}{Exception}")
             .WriteTo.Seq("http://localhost:5341") // Optional: log to Seq UI
             .CreateLogger();
 
